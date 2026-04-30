@@ -1334,6 +1334,9 @@ footer {
     .nav-links {
         display: none; /* simple mobile hide for now */
     }
+    #nav-cta {
+        display: none;
+    }
     .headline-secondary {
         font-size: 2.8rem;
     }
