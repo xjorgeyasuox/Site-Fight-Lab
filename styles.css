@@ -353,7 +353,7 @@ p {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
 }
 .nav-login {
     font-size: 0.9rem;
@@ -368,12 +368,17 @@ p {
 .btn-pill {
     background: var(--primary-yellow);
     color: #000;
-    padding: 8px 24px;
+    padding: 5px 16px;
     border-radius: 50px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
     font-family: var(--font-body);
     transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-pill:hover {
     background: var(--primary-hover);
