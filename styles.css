@@ -1278,6 +1278,7 @@ footer {
 .h-1 { top: 15%; left: -2%; animation: floatH1Premium 7s ease-in-out infinite; }
 .h-2 { top: 46%; left: -10%; animation: floatH2Premium 8s ease-in-out infinite; animation-delay: 1.5s; }
 .h-3 { bottom: 15%; left: 0%; animation: floatH3Premium 9s ease-in-out infinite; animation-delay: 3s; }
+.h-4 { top: 35%; right: -5%; animation: floatH4Premium 7.5s ease-in-out infinite; animation-delay: 4.5s; }
 
 @keyframes floatH1Premium {
     0%, 100% { transform: translate3d(0, 0, 50px) rotateY(10deg); }
@@ -1292,6 +1293,11 @@ footer {
 @keyframes floatH3Premium {
     0%, 100% { transform: translate3d(0, 0, 40px) rotateY(5deg); }
     50% { transform: translate3d(25px, -25px, 90px) rotateY(-10deg); }
+}
+
+@keyframes floatH4Premium {
+    0%, 100% { transform: translate3d(0, 0, 60px) rotateY(-12deg); }
+    50% { transform: translate3d(-25px, 25px, 110px) rotateY(8deg); }
 }
 
 /* Features Section - The Original Master Layout */
@@ -1450,11 +1456,6 @@ footer {
         pointer-events: auto;
         width: 100%;
         max-width: 400px;
-    }
-    .hud-item:nth-child(3) {
-        grid-column: span 2;
-        justify-self: center;
-        width: 100%;
     }
     .hud-item {
         position: relative;
