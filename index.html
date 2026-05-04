@@ -38,12 +38,9 @@
     <!-- Header / Navbar -->
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <img src="assets/logo.png" alt="FightLab Logo" class="logo-img">
-                </div>
-                <span class="logo-text">FIGHT<span class="logo-lab">LAB</span></span>
-            </div>
+            <a href="/" class="logo">
+                <img src="assets/logo-site.png" alt="FightLab Logo" class="logo-site">
+            </a>
 
             <div class="nav-actions">
                 <a href="https://app.fightlab.com.br" class="nav-login">Entrar</a>
@@ -70,7 +67,7 @@
                 <p class="hero-description" data-reveal="fade-up" data-delay="200">A plataforma definitiva para academias de luta.<br>Gerencie alunos, financeiro, check-ins e ranking, tudo em um só lugar, com a alma do tatame.</p>
                 
                 <div class="hero-actions" data-reveal="fade-up" data-delay="400">
-                    <a href="#aviso" class="btn-primary btn-shine" id="hero-cta">CADASTRE-SE &rarr;</a>
+                    <a href="#aviso" class="btn-primary btn-shine" id="hero-cta">CADASTRE-SE</a>
                 </div>
                 
 
@@ -183,48 +180,81 @@
     <!-- RG do Lutador -->
     <section id="rg-lutador" class="rg-section section-padding">
         <div class="container rg-container">
-            <div class="rg-content-wrapper">
+            <!-- Camada de Texto e Conteúdo -->
+            <div class="rg-info-column">
                 <div class="rg-content" data-reveal="fade-up">
-                    <h2 class="rg-headline">O RG do lutador</h2>
+                    <span class="mini-badge">REGISTRO DEFINITIVO</span>
+                    <h2 class="rg-headline">O <span class="text-yellow">RG</span> DO LUTADOR</h2>
                     <p class="rg-subheadline">
-                        O mestre forma o lutador. <br>
-                        O FightLab valida essa história, tenha o registro definitivo e blindado da sua trajetória no tatame.
+                        Sua história no tatame não se perde.<br>
+                        É validada pelo mestre e registrada para sempre.
                     </p>
                 </div>
                 
-                <div class="rg-mockup-details" data-reveal="fade-up" data-delay="100">
-                    <div class="rg-explanation">
-                        <p>Hoje, não existe um controle real. Qualquer pessoa pode dizer que conquistou uma faixa. O FightLab traz o fim do achismo e entrega a <strong>credibilidade absoluta</strong> para atletas e academias.</p>
+                <div class="rg-details" data-reveal="fade-up" data-delay="100">
+                    <div class="rg-explanation glass">
+                        <p>Aqui, a faixa não é só reconhecimento. É um <strong>ativo digital</strong>. O mestre valida, o sistema registra e sua evolução se torna prova permanente.</p>
                     </div>
 
-                    <div class="rg-steps">
-                        <div class="rg-step" data-reveal="fade-right" data-delay="100">
-                            <span class="step-number">1</span>
-                            <div>
-                                <h4>Reconhecimento do Mestre</h4>
-                                <p>O professor cadastra o aluno e assina a graduação (faixa/kruang).</p>
+                    <div class="rg-steps-vertical">
+                        <div class="rg-step-item" data-reveal="fade-right" data-delay="100">
+                            <div class="step-icon">01</div>
+                            <div class="step-txt">
+                                <h4>Graduação Validada</h4>
+                                <p>O professor assina digitalmente cada mudança de faixa.</p>
                             </div>
                         </div>
-                        <div class="rg-step" data-reveal="fade-right" data-delay="200">
-                            <span class="step-number">2</span>
-                            <div>
-                                <h4>Validação do Sistema</h4>
-                                <p>O FightLab registra e imortaliza a evolução na base de dados do CT.</p>
+                        <div class="rg-step-item" data-reveal="fade-right" data-delay="200">
+                            <div class="step-icon">02</div>
+                            <div class="step-txt">
+                                <h4>Histórico Imortalizado</h4>
+                                <p>Toda a sua jornada salva e acessível em qualquer lugar.</p>
                             </div>
                         </div>
-                        <div class="rg-step" data-reveal="fade-right" data-delay="300">
-                            <span class="step-number">3</span>
-                            <div>
-                                <h4>O Seu Legado</h4>
-                                <p>O atleta carrega a prova real de sua conquista. Faixa não se diz. Se comprova.</p>
+                        <div class="rg-step-item" data-reveal="fade-right" data-delay="300">
+                            <div class="step-icon">03</div>
+                            <div class="step-txt">
+                                <h4>Registro de Combate</h4>
+                                <p>Lutas, vitórias e desempenho registrados, seu histórico fala por você.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="rg-visual" data-reveal="fade-in" data-delay="300">
-                <img src="assets/mockup.png" alt="Mockup FightLab" class="rg-mockup-img">
+
+            <!-- Camada Visual Premium (Composiçăo 3D) -->
+            <div class="rg-visual-premium">
+                <div class="rg-glow-aura"></div>
+                
+                <div class="rg-fighter-wrapper" data-reveal="zoom-in" data-delay="400">
+                    <img src="assets/rg_fighter_new.png" alt="Lutador FightLab Jorge Yasuo" class="rg-fighter-new">
+                    <div class="rg-scanner-line"></div>
+                </div>
+                
+                <!-- HUD flutuante integrado (Projeções Digitais) -->
+                <div class="rg-hud-stats">
+                    <div class="hud-item h-1" data-reveal="fade-left" data-delay="600">
+                        <div class="hud-icon">🥋</div>
+                        <div class="hud-data">
+                            <span class="hud-v">421</span>
+                            <span class="hud-l">TREINOS</span>
+                        </div>
+                    </div>
+                    <div class="hud-item h-2" data-reveal="fade-left" data-delay="800">
+                        <div class="hud-icon">🏅</div>
+                        <div class="hud-data">
+                            <span class="hud-v">AZUL</span>
+                            <span class="hud-l">FAIXA ATUAL</span>
+                        </div>
+                    </div>
+                    <div class="hud-item h-3" data-reveal="fade-left" data-delay="1000">
+                        <div class="hud-icon">🏆</div>
+                        <div class="hud-data">
+                            <span class="hud-v">12</span>
+                            <span class="hud-l">CONQUISTAS</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
