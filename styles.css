@@ -1231,24 +1231,24 @@ footer {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 184, 0, 0.6);
-    padding: 20px 28px;
-    border-radius: 24px;
+    padding: 15px 22px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     box-shadow: 0 25px 60px rgba(0,0,0,0.8), inset 0 0 25px rgba(255, 184, 0, 0.2);
     transform: translateZ(50px);
 }
 
 .hud-icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
     background: rgba(255, 184, 0, 0.2);
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 14px;
+    border-radius: 12px;
     border: 1px solid rgba(255, 184, 0, 0.4);
 }
 
@@ -1259,18 +1259,18 @@ footer {
 
 .hud-v { 
     font-family: 'Anton', sans-serif; 
-    font-size: 2.5rem; 
+    font-size: 2.1rem; 
     color: #fff; 
     line-height: 1; 
     letter-spacing: 1px;
 }
 
 .hud-l { 
-    font-size: 0.75rem; 
+    font-size: 0.65rem; 
     color: var(--primary-yellow); 
     letter-spacing: 3px; 
     font-weight: 800; 
-    margin-top: 6px;
+    margin-top: 4px;
     text-transform: uppercase;
 }
 
