@@ -31,6 +31,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -112,65 +114,97 @@
 
     <!-- Diferenciais -->
     <section id="beneficios" class="features section-padding">
-        <div class="container features-container">
-            <!-- Coluna Esquerda: Card de Imagem -->
-            <div class="feature-image-column" data-reveal="fade-right">
-                <div class="feature-main-card">
-                    <img src="assets/luta.png" alt="Luta FightLab" class="feature-card-img">
-                    <div class="feature-overlay-text">
-                        <div class="counter-value">+100</div>
-                        <div class="counter-desc">ATLETAS NO TATAME</div>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="features-header" data-reveal="fade-up">
+                <span class="mini-badge">FUNCIONALIDADES ELITE</span>
+                <h2 class="section-title">O PODER DO <span class="text-yellow">FIGHTLAB</span> NO SEU TATAME</h2>
+                <p>Tecnologia desenhada por quem vive a luta, para quem respira gestão.</p>
             </div>
 
-            <!-- Coluna Direita: Texto e Grade -->
-            <div class="features-content-column">
-                <div class="features-header-mini" data-reveal="fade-up">
-                    <span class="mini-badge">DIFERENCIAIS</span>
-                    <h2 class="mini-section-title">Pare de gerenciar seu CT no <span class="text-yellow">improviso</span>.<br>Controle tudo em <span class="text-yellow">um só lugar</span>.</h2>
+            <div class="features-split-v2">
+                <div class="features-list-v2">
+                    <!-- BLOCO 1 – FINANCEIRO -->
+                    <div class="feature-card-v2" data-reveal="fade-right" data-delay="100">
+                        <div class="card-icon-v2">
+                            <i data-lucide="wallet" class="golden-icon"></i>
+                        </div>
+                        <div class="card-content-v2">
+                            <h3 class="card-headline-v2">Financeiro Inteligente</h3>
+                            <p class="card-subheadline-v2">Pare de perder dinheiro com mensalidades esquecidas.</p>
+                            <ul class="card-bullets-v2">
+                                <li>Saiba quem pagou e quem está atrasado</li>
+                                <li>Antecipe vencimentos e reduza a inadimplência</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 2 – CHECK-IN -->
+                    <div class="feature-card-v2" data-reveal="fade-right" data-delay="200">
+                        <div class="card-icon-v2">
+                            <i data-lucide="user-check" class="golden-icon"></i>
+                        </div>
+                        <div class="card-content-v2">
+                            <h3 class="card-headline-v2">Check-in Automatizado</h3>
+                            <p class="card-subheadline-v2">Presença automática, sem esforço para o professor.</p>
+                            <ul class="card-bullets-v2">
+                                <li>Histórico de treinos e frequência real em tempo real</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 3 – EVOLUÇÃO -->
+                    <div class="feature-card-v2" data-reveal="fade-right" data-delay="300">
+                        <div class="card-icon-v2">
+                            <i data-lucide="trending-up" class="golden-icon"></i>
+                        </div>
+                        <div class="card-content-v2">
+                            <h3 class="card-headline-v2">Evolução Técnica</h3>
+                            <p class="card-subheadline-v2">Mostre progresso real e valorize o esforço do aluno.</p>
+                            <ul class="card-bullets-v2">
+                                <li>Progressão de treinos e histórico completo de graduação</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 4 – GESTÃO -->
+                    <div class="feature-card-v2" data-reveal="fade-right" data-delay="400">
+                        <div class="card-icon-v2">
+                            <i data-lucide="layout-dashboard" class="golden-icon"></i>
+                        </div>
+                        <div class="card-content-v2">
+                            <h3 class="card-headline-v2">Gestão Centralizada</h3>
+                            <p class="card-subheadline-v2">Tudo o que você precisa em um único sistema.</p>
+                            <ul class="card-bullets-v2">
+                                <li>Controle de alunos, turmas, agenda e histórico</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BLOCO 5 – ENGAJAMENTO -->
+                    <div class="feature-card-v2" data-reveal="fade-right" data-delay="500">
+                        <div class="card-icon-v2">
+                            <i data-lucide="award" class="golden-icon"></i>
+                        </div>
+                        <div class="card-content-v2">
+                            <h3 class="card-headline-v2">Engajamento e Retenção</h3>
+                            <p class="card-subheadline-v2">Motive seus alunos a treinarem mais e melhor.</p>
+                            <ul class="card-bullets-v2">
+                                <li>Ranking por desempenho e sistema de evolução por conquistas</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="features-grid-2x2">
-                    <!-- Benefício 1 -->
-                    <div class="feature-item-small" data-reveal="fade-up" data-delay="100">
-                        <div class="item-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <div class="features-image-v2" data-reveal="fade-left">
+                    <div class="mockup-container">
+                        <img src="assets/fighters_vertical.png" alt="FightLab Atletas" class="app-mockup-v2 main-feature-img">
+                        <div class="athlete-badge">
+                            <div class="badge-info">
+                                <span class="badge-number">+100</span>
+                                <span class="badge-text">ATLETAS</span>
+                            </div>
                         </div>
-                        <h3>Chega de correr atrás de mensalidade</h3>
-                        <p>Saiba quem pagou, quem atrasou e automatize seu financeiro sem planilhas.</p>
-                    </div>
-                    <!-- Benefício 2 -->
-                    <div class="feature-item-small" data-reveal="fade-up" data-delay="200">
-                        <div class="item-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-                        </div>
-                        <h3>Check-in sem esforço</h3>
-                        <p>Presença registrada em segundos. Histórico automático de treinos.</p>
-                    </div>
-                    <!-- Benefício 3 -->
-                    <div class="feature-item-small" data-reveal="fade-up" data-delay="300">
-                        <div class="item-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-                        </div>
-                        <h3>Evolução que você consegue provar</h3>
-                        <p>Acompanhe a progressão dos alunos com dados reais, não achismo.</p>
-                    </div>
-                    <!-- Benefício 4 -->
-                    <div class="feature-item-small" data-reveal="fade-up" data-delay="400">
-                        <div class="item-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.04-2.44V7.5a2.5 2.5 0 0 1 4.5-1.5z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.04-2.44V7.5a2.5 2.5 0 0 0-4.5-1.5z"></path></svg>
-                        </div>
-                        <h3>Menos bagunça, mais controle</h3>
-                        <p>Alunos, turmas e agenda organizados. Tudo centralizado, sem planilhas ou cadernos.</p>
-                    </div>
-                    <!-- Benefício 5 -->
-                    <div class="feature-item-small" data-reveal="fade-up" data-delay="500">
-                        <div class="item-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
-                        </div>
-                        <h3>Retenção e engajamento</h3>
-                        <p>Use ranking e evolução como motivação. Seu aluno treina mais e permanece mais tempo.</p>
+                        <div class="mockup-glow"></div>
                     </div>
                 </div>
             </div>

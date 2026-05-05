@@ -147,3 +147,31 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// --- 4. INTERACTIVE CARDS (Spotlight Effect) ---
+const initSpotlight = () => {
+    const cards = document.querySelectorAll('.feature-card-v2');
+    cards.forEach(card => {
+        card.addEventListener('mousemove', e => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    initSpotlight();
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+});
+
+if (document.readyState !== 'loading') {
+    initSpotlight();
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+}
