@@ -324,7 +324,7 @@
                         <li>Perfil do aluno</li>
                         <li>Suporte via e-mail</li>
                     </ul>
-                    <a href="#aviso" class="btn-outline w-100 mt-auto">Selecionar Plano</a>
+                    <a href="#contratar" data-plan="iniciante" class="btn-outline w-100 mt-auto checkout-trigger">ASSINAR INICIANTE</a>
                 </div>
 
                 <!-- Plano 2 -->
@@ -343,7 +343,7 @@
                         <li>Eventos e treinos</li>
                         <li>Suporte prioritário</li>
                     </ul>
-                    <a href="#aviso" class="btn-primary w-100 mt-auto">Selecionar Plano</a>
+                    <a href="#contratar" data-plan="profissional" class="btn-primary w-100 mt-auto checkout-trigger">ASSINAR PROFISSIONAL</a>
                 </div>
 
                 <!-- Plano 3 -->
@@ -367,6 +367,21 @@
         </div>
     </section>
     
+    <!-- Checkout: assinatura mensal FightLab -->
+    <section id="contratar" class="section-padding" style="background:#101010;color:#fff;">
+      <div class="container" style="max-width:720px">
+        <div class="section-header text-center"><h2>COMECE SUA JORNADA</h2><p>Assinatura mensal para sua academia. Pagamento seguro e recorrente.</p></div>
+        <form id="checkout-form" class="lead-form" style="display:grid;gap:16px">
+          <div class="form-group"><label for="checkout-plan">Plano escolhido</label><select id="checkout-plan" required><option value="iniciante">Iniciante — R$ 199/mês</option><option value="profissional">Profissional — R$ 269/mês</option></select></div>
+          <div class="form-group"><label for="checkout-name">Seu nome</label><input id="checkout-name" autocomplete="name" maxlength="120" required></div>
+          <div class="form-group"><label for="checkout-email">Seu e-mail</label><input id="checkout-email" type="email" autocomplete="email" maxlength="254" required></div>
+          <div class="form-group"><label for="checkout-academy">Nome da academia</label><input id="checkout-academy" maxlength="120" required></div>
+          <button type="submit" class="btn-primary w-100" id="checkout-submit">CONTINUAR PARA PAGAMENTO</button>
+          <p id="checkout-feedback" role="status" aria-live="polite"></p>
+          <small>Você será direcionado ao ambiente de pagamento do provedor. A academia só será ativada após confirmação segura do pagamento. Cancelamento e gestão da assinatura disponíveis conforme os termos da contratação.</small>
+        </form>
+      </div>
+    </section>
     <!-- Launch Expectation -->
     <section id="aviso" class="launch-expectation">
         <div class="launch-container">
