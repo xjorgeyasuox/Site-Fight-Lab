@@ -175,3 +175,40 @@ if (document.readyState !== 'loading') {
         lucide.createIcons();
     }
 }
+
+
+// Checkout seguro: a URL deve vir do backend, nunca de uma chave secreta no navegador.
+document.querySelectorAll('.checkout-trigger').forEach(button => {
+  button.addEventListener('click', () => {
+    const select = document.getElementById('checkout-plan');
+    if (select) select.value = button.dataset.plan;
+  });
+});
+const checkoutForm = document.getElementById('checkout-form');
+checkoutForm?.addEventListener('submit', async event => {
+  event.preventDefault();
+  const button = document.getElementById('checkout-submit');
+  const feedback = document.getElementById('checkout-feedback');
+  button.disabled = true;
+  feedback.textContent = 'Preparando pagamento seguro...';
+  try {
+    const response = await fetch('/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        plan: document.getElementById('checkout-plan').value,
+        name: document.getElementById('checkout-name').value.trim(),
+        email: document.getElementById('checkout-email').value.trim(),
+        academy: document.getElementById('checkout-academy').value.trim()
+      })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok || !data.checkoutUrl) throw new Error(data.error || 'Pagamento indisponível no momento.');
+    const url = new URL(data.checkoutUrl);
+    if (url.protocol !== 'https:') throw new Error('URL de pagamento inválida.');
+    window.location.assign(url.href);
+  } catch (error) {
+    feedback.textContent = error.message || 'Não foi possível iniciar o pagamento.';
+    button.disabled = false;
+  }
+});
