@@ -15,7 +15,7 @@ document.getElementById("save").addEventListener("click",async()=>{
   await reload(credential.user);if(!credential.user.emailVerified){await sendEmailVerification(credential.user);feedback.textContent="Enviamos um e-mail de verificação. Confirme o endereço e depois clique novamente em SALVAR CONFIGURAÇÃO.";return}const token=await credential.user.getIdToken(true);
   const data=JSON.parse(localStorage.getItem("fightlab:onboarding:v1")||"{}");
   if(!data.name||!data.academy||!data.plan)throw Error("Preencha os dados do cadastro.");
-  const response=await fetch(endpoint.replace(/\\/$/,"")+"/onboarding/draft",{method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+token},body:JSON.stringify(data)});
+  const response=await fetch(endpoint.split("?")[0].replace(/\/$/,"")+"/onboarding/draft",{method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+token},body:JSON.stringify(data)});
   const result=await response.json();if(!response.ok)throw Error(result.error||"Erro ao salvar cadastro");
   feedback.textContent="Cadastro salvo com segurança! A ativação ficará disponível após a integração do pagamento.";
  }catch(e){feedback.textContent=e.message||"Erro ao salvar. Tente novamente."}finally{btn.disabled=false}
